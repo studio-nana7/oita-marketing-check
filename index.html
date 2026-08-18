@@ -224,7 +224,10 @@
       .worry-card svg{width:52px;height:52px;margin:0}.worry-card .worry-icon{width:58px;height:58px;margin:0;object-fit:contain}
       .worry-card p{font-size:16px;line-height:1.7}
       .check-grid{grid-template-columns:1fr;gap:26px}
-      .check-item{display:grid;grid-template-columns:96px 1fr;text-align:left;column-gap:16px;align-items:center;padding:14px 8px;position:relative}
+      .check-item{display:grid;grid-template-columns:96px minmax(0,1fr);grid-template-rows:auto auto;text-align:left;column-gap:16px;row-gap:4px;align-items:center;padding:14px 8px;position:relative}
+      .check-item .icon-circle{grid-column:1;grid-row:1 / span 2;align-self:center}
+      .check-item h3{grid-column:2;grid-row:1;align-self:end}
+      .check-item p{grid-column:2;grid-row:2;align-self:start}
       .icon-circle{width:94px;height:94px;margin:0;position:relative;overflow:visible}.icon-circle svg{width:62px;height:62px}.icon-circle .check-icon-img{width:100%;height:100%;object-fit:cover;display:block}.num{left:-7px;top:-7px;width:34px;height:34px;font-size:13px}
       .check-item h3{font-size:17px;margin:0 0 4px}.check-item p{font-size:14px;line-height:1.75}
       .fineprint{font-size:12px;text-align:left;margin-top:20px}
